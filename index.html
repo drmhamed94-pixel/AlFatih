@@ -5,6 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تحدي الملك الفاتح | Stronghold Crusader DE</title>
+
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="تحدي الملك الفاتح | Stronghold Crusader DE">
+    <meta property="og:description"
+        content="قائدان. تاج واحد. والحرب وحدها من تقرر المصير. خمس معارك. أربع خرائط. ملك واحد.">
+    <meta property="og:image" content="https://king-conqueror.vercel.app/hamed-photo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://king-conqueror.vercel.app/">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="تحدي الملك الفاتح | Stronghold Crusader DE">
+    <meta name="twitter:description"
+        content="قائدان. تاج واحد. والحرب وحدها من تقرر المصير. خمس معارك. أربع خرائط. ملك واحد.">
+    <meta name="twitter:image" content="https://king-conqueror.vercel.app/hamed-photo.png">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kufam:wght@400;500;600;700&display=swap');
 
@@ -559,9 +577,20 @@
         .player-logo {
             width: 200px;
             height: 200px;
-            margin-bottom: 0px;
-            object-fit: contain;
-            filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5));
+            margin-bottom: 10px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #DAA520;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+            filter: sepia(0.2) contrast(1.1);
+            transition: all 0.3s ease;
+        }
+
+        .player-logo:hover {
+            transform: scale(1.05);
+            filter: sepia(0) contrast(1.2);
+            border-color: #FFD700;
+            box-shadow: 0 0 25px rgba(218, 165, 32, 0.6);
         }
 
         .player-name {
@@ -718,7 +747,7 @@
             <div class="scoreboard-container">
                 <!-- Hamed -->
                 <div class="player-card">
-                    <img src="hamed-logo.png" alt="Hamed Logo" class="player-logo">
+                    <img src="hamed-photo.png" alt="Hamed" class="player-logo">
                     <div class="player-name">حامد</div>
                     <div class="player-score">0</div>
                 </div>
@@ -737,7 +766,7 @@
 
                 <!-- Mohamed -->
                 <div class="player-card">
-                    <img src="mohamed-logo.png" alt="Mohamed Logo" class="player-logo">
+                    <img src="mohamed-photo-cropped.png" alt="Mohamed" class="player-logo">
                     <div class="player-name">محمد</div>
                     <div class="player-score">1</div>
                 </div>
