@@ -727,6 +727,36 @@
                 font-size: 2em;
             }
         }
+
+        .roles-box {
+            display: flex;
+            gap: 15px;
+            margin: 10px 0 20px;
+            flex-wrap: wrap;
+        }
+
+        .role-badge {
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .role-offense {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            border: 1px solid #c0392b;
+        }
+
+        .role-defense {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            border: 1px solid #2980b9;
+        }
     </style>
 </head>
 
@@ -742,7 +772,7 @@
                 <div class="player-card">
                     <img src="hamed-photo.png" alt="Hamed" class="player-logo">
                     <div class="player-name">حامد</div>
-                    <div class="player-score">0</div>
+                    <div class="player-score">1</div>
                 </div>
 
                 <!-- Timeline -->
@@ -750,7 +780,7 @@
                     <div class="timeline-title">سجل المعارك</div>
                     <div class="timeline-grid">
                         <div class="timeline-item win-moh" data-battle="1" data-status="فوز محمد">✅</div>
-                        <div class="timeline-item" data-battle="2" data-status="لم تبدأ بعد">2</div>
+                        <div class="timeline-item win-ham" data-battle="2" data-status="فوز حامد">✅</div>
                         <div class="timeline-item" data-battle="3" data-status="لم تبدأ بعد">3</div>
                         <div class="timeline-item" data-battle="4" data-status="لم تبدأ بعد">4</div>
                         <div class="timeline-item" data-battle="5" data-status="لم تبدأ بعد">5</div>
@@ -823,7 +853,7 @@
             </div>
 
             <!-- المعركة الثانية -->
-            <div class="battle">
+            <div class="battle battle-complete">
                 <div class="battle-media">
                     <img src="./maps/pics/the-cratered-coast.png" alt="The Cratered Coast" class="map-image">
                     <div class="video-container">
@@ -837,6 +867,11 @@
                     <div class="battle-title">
                         <span class="emoji">⚓</span>
                         <span>المعركة الثانية: مرابطون – الذهاب</span>
+                        <span class="winner-badge">🏆 الفائز: حامد</span>
+                    </div>
+                    <div class="roles-box">
+                        <div class="role-badge role-offense">🗡️ الهجوم: محمد</div>
+                        <div class="role-badge role-defense">🛡️ الدفاع: حامد</div>
                     </div>
                     <div class="map-name">The Cratered Coast</div>
                     <div class="battle-description">
